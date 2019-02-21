@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/jpablopachar/app-libros/issues"
   },
-  "homepage": "https://github.com/jpablopachar/app-libros#readme"
+  "homepage": "https://github.com/jpablopachar/app-libros#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "mongoose": "^5.4.14",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1"
+  }
 }
