@@ -4,7 +4,7 @@ const multer = require('multer');
 
 const path = require('path');
 
-// require('./databases/database');
+require('./database');
 
 const app = express();
 
