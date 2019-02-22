@@ -10,8 +10,36 @@
   <title>APP Libros</title>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">App Libros</a>
+    </div>
+  </nav>
+  <div class="container p-4" id="app">
+    <div class="row">
+      <div class="col-md-4">
+        <form id="form-book" class="card card-body">
+          <div class="form-group">
+            <input type="text" id="titulo" class="form-control" placeholder="Título" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="text" id="autor" class="form-control" placeholder="Autor">
+          </div>
+          <div class="form-group">
+            <input type="text" id="isbn" class="form-control" placeholder="ISBN">
+          </div>
+          <div class="input-group mb-3">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="imagen" required>
+                <label class="custom-file-label" for="imagen" aria-describedby="inputGroupFileAddon02">Escoje una imágen</label>
+              </div>
+            </div>
+          <button type="Submit" class="btn btn-primary">Guardar libro</button>
+        </form>
+      </div>
+      <div class="col-md-8" id="cards-libros"></div>
+    </div>
+  </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>

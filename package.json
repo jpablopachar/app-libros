@@ -10,7 +10,8 @@
     "start": "cross-env NODE_ENV=production node server/index.js",
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --ignore client",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "client:dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
