@@ -11,7 +11,8 @@ module.exports = {
     path: path.join(__dirname, 'server/public'),
     filename: 'js/bundle.js'
   },
-  mode: 'development',
+  // mode: 'development',
+  mode: 'production',
   module: {
     rules: [{
       test: /\.css/,

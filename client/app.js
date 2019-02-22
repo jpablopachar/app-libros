@@ -1,5 +1,12 @@
 import './styles/estilos.css';
-import LibroService from './services/LibroService';
+import Interfaz from './interfaz.js'
+
+const interfaz = new Interfaz();
+
+// Se ejecuta cuando se inicia el DOM
+document.addEventListener('DOMContentLoaded', () => {
+  interfaz.renderLibros();
+})
 
 document.getElementById('form-libro').addEventListener('submit', (e) => {
   e.preventDefault();
@@ -16,9 +23,16 @@ document.getElementById('form-libro').addEventListener('submit', (e) => {
   formData.append('isbn', isbn);
   formData.append('imagen', imagen[0]);
 
-  const libroService = new LibroService();
+  interfaz.agregarNuevoLibro(formData);
+  interfaz.renderMensaje('Nuevo libro agregado', 'success', 3000);
+});
 
-  libroService.guardarLibro(formData);
+// Captura todos los eventos click de cards-libros
+document.getElementById('cards-libros').addEventListener('click', (e) => {
+  if (e.target.classList.contains('eliminar')) {
+    interfaz.eliminarLibro(e.target.getAttribute('_id'));
+    interfaz.renderMensaje('Libro eliminado', 'danger', 2000);
+  }
 
-  libroService.postLibros();
+  e.preventDefault();
 });

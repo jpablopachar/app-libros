@@ -38,10 +38,13 @@ Aplicación SPA de una tienda de libros usando Javascript Fullstack y MongoDB
 
 [timeago.js](https://www.npmjs.com/package/timeago.js): Se usa para formatear datetime con la sentencia *** time ago. ejemplo: '3 hours ago'.
 
-## Frameworks y librías para el frontend
+## Frameworks y librerías para el frontend
 
 [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/): Es un kit de herramientas de código abierto para el desarrollo con HTML, CSS y JS.
 
 [jquery](https://api.jquery.com/): Es una biblioteca JavaScript rápida, pequeña y rica en funciones. Hace que cosas como la travesía y manipulación de documentos HTML, el manejo de eventos, la animación y Ajax sean mucho más simples con una API fácil de usar que funciona en una multitud de navegadores.
 
 [Animate.css](https://github.com/daneden/animate.css): Es un montón de animaciones divertidas y divertidas para que las uses en tus proyectos. Excelente para enfatizar, páginas de inicio, deslizadores, y en general, simplemente añadir agua.
+
+## Vista de la aplicación
+![Sin título](docs/capturaHome.png "Vista previa de la aplicación")
