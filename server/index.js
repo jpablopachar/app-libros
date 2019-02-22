@@ -45,7 +45,7 @@ app.use(multer({ storage }).single('imagen'));
 });*/
 
 /*                    Rutas                      */
-// app.use(require('./routes/libros'));
+app.use('/api/libros', require('./routes/libros'));
 
 // Escucha en el puerto establecido
 app.listen(app.get('port'), () => console.log(`Servidor en puerto ${app.get('port')}`));
