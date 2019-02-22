@@ -13,7 +13,7 @@ class Interfaz {
     libros.forEach((libro) => {
       const div = document.createElement('div');
 
-      div.className = '';
+      div.className = 'animated fadeInRight';
       div.innerHTML = `
         <div class="card m-2">
           <div class="row no-gutters">
