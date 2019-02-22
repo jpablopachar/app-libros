@@ -46,5 +46,20 @@ Aplicación SPA de una tienda de libros usando Javascript Fullstack y MongoDB
 
 [Animate.css](https://github.com/daneden/animate.css): Es un montón de animaciones divertidas y divertidas para que las uses en tus proyectos. Excelente para enfatizar, páginas de inicio, deslizadores, y en general, simplemente añadir agua.
 
+## Herramientas de despliegue
+[MongoDB Atlas](https://www.mongodb.com/cloud/atlas): Servicio MongoDB en nube automatizado creado para equipos ágiles que prefieren dedicar su tiempo a la creación de aplicaciones que a la gestión de bases de datos. Disponible en AWS, Azure y GCP.
+
+[Heroku]([https://www.mongodb.com/cloud/atlas](https://www.heroku.com/)): Aprende a construir, desplegar y administrar tus aplicaciones en Heroku.
+
 ## Vista de la aplicación
 ![Sin título](docs/capturaHome.png "Vista previa de la aplicación")
+
+## Comando utilizados
+// Ejecutar el servidor en modo desarrollo (Tener instalado nodemon)
+`$ npm run dev`
+
+// Ejecutar webpack en modo desarrollo
+`$ npm run client:dev`
+
+// Ejecutar webpack en modo producción
+`$ npm run build`
