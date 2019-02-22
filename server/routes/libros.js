@@ -10,7 +10,8 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
   const { titulo, autor, isbn } = req.body;
-  const nuevoLibro = new Libro({ titulo, autor, isbn });
+  const imagenPath = '/uploads/' + req.file.filename;
+  const nuevoLibro = new Libro({ titulo, autor, isbn, imagenPath });
 
   await nuevoLibro.save();
   res.json({ mensaje: "Libro guardado" });

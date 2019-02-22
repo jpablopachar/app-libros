@@ -5,6 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express');
 const morgan = require('morgan');
 const multer = require('multer');
+const cors = require('cors');
 
 const path = require('path');
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cors());
 
 const storage = multer.diskStorage({
   destination: path.join(__dirname, 'public/uploads'),
