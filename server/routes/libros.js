@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { unlink } = require('fs-extra');
 
 const Libro = require('../models/libros');
 
