@@ -18,7 +18,7 @@ class Interfaz {
         <div class="card m-2">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="http://localhost:3000${libro.imagenPath}" class="img-fluid" alt="">
+              <img src="${libro.imagenPath}" class="img-fluid" alt="">
             </div>
             <div class="col-md-8">
               <div class="card-block px-2">
